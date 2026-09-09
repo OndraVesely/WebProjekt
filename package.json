@@ -3,6 +3,7 @@
     "bootstrap": "^5.3.8",
     "bootswatch": "^5.3.8",
     "ckeditor": "^4.12.1",
-    "tinymce": "^8.9.0"
+    "tinymce": "^8.9.0",
+    "tom-select": "^2.6.2"
   }
 }
