@@ -8,12 +8,13 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.min.css">
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/quartz/bootstrap.min.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-sm bg-dark  navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="index.html">Sushi UH</a>
+      <img src="sushi/logo.png" class="rounded img-fluid" alt="Cinque Terre"><a class="navbar-brand" href="index.html">Sushi UH</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -44,6 +45,10 @@
           <input type="tel" class="form-control" id="phone" placeholder="000-000-000" required>
         </div>
         <div class="mb-3">
+          <label for="email" class="form-label fw-bold">Váš Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="email@seznam.cz" required>
+        </div>
+        <div class="mb-3">
           <label for="city" class="form-label fw-bold">Vaše město:</label>
           <input type="text" class="form-control" id="city" placeholder="Město" required>
         </div>
@@ -60,6 +65,10 @@
             <option value="sashimi">Sashimi - 180 Kč</option>
             <option value="uramaki">Uramaki - 140 Kč</option>
             <option value="temaki">Temaki - 100 Kč</option>
+            <option value="Salmon ride">Salmon ride - 150 Kč</option>
+            <option value="Tuna desert">Tuna desert - 170 Kč</option>
+            <option value="Avocado bomb">Avocado bomb - 190 Kč</option>
+            <option value="All In One">All In One - 199 Kč</option>
           </select>
           <div class="form-text text-danger">Musíte vybrat odpověď!!!</div>
         </div>
@@ -81,7 +90,7 @@
 
   <footer class="bg-dark text-light text-center py-3 mt-auto">
     <p class="mb-1">Projekt z WEB - 2. ročník</p>
-    <a href="dokumentace.pdf" target="_blank" class="text-warning text-decoration-none fw-bold">
+    <a href="dokumentace2.pdf" target="_blank" class="text-warning text-decoration-none fw-bold">
       <i class="fa-solid fa-file-pdf me-1"></i>Odkaz na dokumentaci
     </a>
   </footer>
@@ -90,7 +99,7 @@
   <script src="node_modules/tom-select/dist/js/tom-select.complete.js"></script>
   <script>
     new TomSelect("#výběrSushi", {
-      maxItems: 5,
+      maxItems: 9,
       plugins: ['remove_button']
     });
   </script>
